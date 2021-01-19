@@ -1,1 +1,92 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: darkgreen;
+  height: 100vh;
+}
+#app {
+  width: 100%;
+  height: 100%;
+}
+.card {
+  margin-top: 40px;
+  background: white;
+  width: 427px;
+  height: 626px;
+  border-radius: 15px;
+  padding: 20px;
+}
+.top::before {
+  content: "\2665";
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  font-size: 20px;
+}
+.bottom::after {
+  content: "\2665";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  font-size: 20px;
+}
+.middle {
+  text-align: center;
+  padding-top: 150px;
+  font-size: 200px;
+}
+h1 {
+  font-size: 150px;
+}
+
+.top-suit {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 80px;
+}
+.bottom-suit {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80px;
+}
+.top-suit.♦::before,
+.bottom-suit.♦::after {
+  content: "\2666";
+  color: red;
+}
+.top-suit.♠::before,
+.bottom-suit.♠::after {
+  content: "\2660";
+  color: black;
+}
+.top-suit.♥::before,
+.bottom-suit.♥::after {
+  content: "\2665";
+  color: red;
+}
+.top-suit.♣::before,
+.bottom-suit.♣::after {
+  content: "\2663";
+  color: black;
+}
+.boton {
+  margin-left: 2cm;
+  margin-top: 8cm;
+}
+.btn {
+  height: 5vh;
+  display: inline;
+  width: 8cm;
+}
